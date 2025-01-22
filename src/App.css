@@ -1,0 +1,118 @@
+
+/* App.css */
+
+/* Set a sky-blue background for the whole page */
+body {
+  background-color: #87CEEB; /* Sky Blue */
+  font-family: 'Poppins', sans-serif; /* Soft, clean font for a cute and modern look */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  justify-content: center; /* Center everything horizontally */
+  align-items: center; /* Center everything vertically */
+  flex-direction: column; /* Stack elements */
+}
+
+/* Center the content and style the header */
+.App-header {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 30px; /* Space between heading and form */
+}
+
+/* Styling the Login form */
+.login {
+  background-color: #ffffff; /* White background for form */
+  padding: 30px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow to give depth */
+  width: 100%;
+  max-width: 400px; /* Limit form width */
+  text-align: center;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+/* Style the form inputs */
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Space between inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded input borders */
+  font-size: 1rem;
+}
+
+/* Style the login button */
+.login button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Error message style */
+.login p {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* Mobile screens (portrait) */
+@media (max-width: 600px) {
+  .App-header {
+    font-size: 2rem; /* Reduce header size */
+    margin-bottom: 20px;
+  }
+
+  .login {
+    padding: 20px;
+    max-width: 90%; /* Make the form responsive on small screens */
+  }
+
+  .login input {
+    padding: 8px; /* Slightly smaller input padding on mobile */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+
+  .login button {
+    padding: 10px 18px; /* Slightly smaller button padding */
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+}
+
+/* Very small screens (like small phones in landscape mode) */
+@media (max-width: 400px) {
+  .App-header {
+    font-size: 1.8rem; /* Even smaller header font */
+  }
+
+  .login {
+    padding: 15px;
+    max-width: 90%; /* Form takes full width on very small screens */
+  }
+
+  .login input {
+    padding: 7px;
+    font-size: 0.85rem; /* Smaller input font size */
+  }
+
+  .login button {
+    padding: 9px 16px; /* Smaller button padding */
+    font-size: 0.95rem; /* Smaller button font size */
+  }
+}
+
